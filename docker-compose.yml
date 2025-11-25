@@ -56,7 +56,7 @@ services:
         hostname: "rabbitmq3"
         entrypoint: /usr/local/bin/cluster-entrypoint.sh
         networks: 
-            - cluster-network
+            - rabbitmq-cluster-network
     haproxy:
         image: haproxy:1.9
         container_name: haproxy
